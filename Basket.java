@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,7 +17,7 @@ public class Basket {
     private int calculateFee() {
         int total_fee = 0;
         for(Book book : basket) {
-            book.print_book_info();
+            book.display_book_info();
             total_fee += book.get_price();
         }
         return total_fee;

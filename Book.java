@@ -1,4 +1,4 @@
 public interface Book {
-    void print_book_info();
+    void display_book_info();
     long get_price();
 }

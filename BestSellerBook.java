@@ -12,9 +12,9 @@ public class BestSellerBook implements Book {
         return Math.round(price * 0.95);
     }
 
-    public void print_book_info() {
+    public void display_book_info() {
         System.out.println("─ Best Seller Info ──────────────");
-        System.out.printf("책 제목 : ", this.title, "\n");
-        System.out.printf("책 가격 : ", this.price, "\n");
+        System.out.println("책 제목 : " + this.title);
+        System.out.println("책 가격 : " + this.price);
     }
 }
