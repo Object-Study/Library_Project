@@ -3,14 +3,12 @@ import java.util.List;
 
 public class Basket {
     private List<Book> basket;
-    private PaymentMethod paymentMethod;
 
-    public Basket(PaymentMethod method, Book ... books) {
+    public Basket(Book ... books) {
         this.basket = Arrays.asList(books);
-        this.paymentMethod = method;
     }
 
-    public int pay() {
+    public int pay(PaymentMethod paymentMethod) {
         return paymentMethod.calculateDiscountFee(calculateFee());
     }
 

@@ -1,14 +1,16 @@
 public class Customer {
     private Basket basket;
+    private PaymentMethod paymentMethod;
     private int mileage;
 
-    public Customer(PaymentMethod method, int mileage, Book ... books) {
-        this.basket = new Basket(method, books);
+    public Customer(PaymentMethod paymentMethod, int mileage, Book ... books) {
+        this.basket = new Basket(books);
+        this.paymentMethod = paymentMethod;
         this.mileage = mileage;
     }
 
     public void pay() {
-        basket.pay();
+        basket.pay(paymentMethod);
     }
 
     private void set_mileage(int mileage) {
