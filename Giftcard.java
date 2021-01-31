@@ -1,4 +1,4 @@
-public class Giftcard implements Method{
+public class Giftcard implements PaymentMethod {
     private String giftcard;
     private int giftprice;
 
@@ -8,8 +8,8 @@ public class Giftcard implements Method{
     }
 
     @ Override
-    public int pay(int price) {
-        price = price - giftprice;
-        return price;
+    public int calculateDiscountFee(int price) {
+        System.out.println("할인된 금액 : " + (price - giftprice));
+        return price - giftprice;
     }
 }

@@ -1,4 +1,4 @@
-public class Card implements Method {
+public class Card implements PaymentMethod {
     private String card;
     private Double discount;
 
@@ -8,7 +8,8 @@ public class Card implements Method {
     }
 
     @ Override
-    public int pay(int price) {
+    public int calculateDiscountFee(int price) {
+        System.out.println("할인된 금액 : " + price * discount);
         price = (int) Math.round(price * (1-discount));
         return price;
     }
