@@ -21,3 +21,7 @@
     - 반납기한은 대출날짜로부터 2주이다.
     - 연체될 시 하루당 100원 최대 20,000원
     - 빌리고자 하는 책이 없을 경우, 예약을 걸 수 있음
+
+---
+### 2021.01.31 Library Project 설계
+![image](https://user-images.githubusercontent.com/34412522/106378713-479e8400-63ea-11eb-8d99-4ebb010f6b8a.png)
