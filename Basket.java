@@ -17,9 +17,9 @@ public class Basket {
 
     private int calculateFee() {
         int total_fee = 0;
-        for(Book each : basket) {
-            each.print_book_info();
-            total_fee += each.get_price();
+        for(Book book : basket) {
+            book.print_book_info();
+            total_fee += book.get_price();
         }
         return total_fee;
     }
