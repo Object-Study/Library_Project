@@ -1,3 +1,8 @@
+package Customer;
+
+import Book.Book;
+import PaymentMethod.PaymentMethod;
+
 import java.util.Arrays;
 import java.util.List;
 
